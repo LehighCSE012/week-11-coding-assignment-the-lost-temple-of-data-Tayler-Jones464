@@ -1,13 +1,11 @@
-import pandas as pd
-"""Imports the Pandas library to read outside files"""
-
 import re
-"""Imports re to work with regular expressions"""
+
+import pandas as pd
 
 def load_artifact_data(excel_filepath):
     """Reads artifact data from a specific sheet ('Main Chamber') in an Excel file,
     skipping the first 3 rows."""
-    excel_filepath = pd.read_excel(excel_filepath, sheet_name = "Main Chamber", 
+    excel_filepath = pd.read_excel(excel_filepath, sheet_name = "Main Chamber",
                   skiprows = 3)
     return excel_filepath
 
