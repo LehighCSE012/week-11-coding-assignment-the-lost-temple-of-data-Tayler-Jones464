@@ -1,3 +1,5 @@
+"""week 11"""
+
 import re
 
 import pandas as pd
@@ -23,4 +25,3 @@ def extract_secret_codes(journal_text):
     """Extracts all secret codes in AZMAR-XXX format from the journal text."""
     secret_codes = re.findall(r"AZMAR\-\d\d\d", journal_text)
     return secret_codes
-
